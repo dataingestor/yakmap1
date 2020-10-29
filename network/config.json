@@ -3,19 +3,19 @@
   "version": "1.0",
   "data": "data.json",
   "logo": {
-    "file": "",
-    "link": "",
-    "text": "Gephi"
+    "file": "YAK NETWORK MAP",
+    "link": "www.yakcollective.org/members/",
+    "text": "Vinay Débrou"
   },
   "text": {
     "more": "---none---",
-    "intro": "Yak Network Map1 - an internal experiment for active Yaks who share a common domain-interest",
-    "title": "YakMap1"
+    "intro": "Yak Network Map is an internal experiment for active Yaks who share common domain-interest(s). \n\n-\u003e Hover on a node to see its connections (visible nodes), rest of the map will get hidden.  \n-\u003e Node Color signifies the openness of the yak for receiving DMs (green: DMs open for collaboration opportunities; yellow: DMs open for starting conversation; blue: prefer to not receive unsolicited DMs)\n-\u003e Thick edge signifies multiple shared-interests between those nodes.\n-\u003e Learn more about this project in the #yak-network-map channel on the Yak Collective Discord Server.",
+    "title": "Yak Network Map"
   },
   "legend": {
     "edgeLabel": "connections",
-    "colorLabel": "Indie-Status",
-    "nodeLabel": "ActiveYaks"
+    "colorLabel": "DM-openness level",
+    "nodeLabel": "yaks"
   },
   "features": {
     "search": true,
