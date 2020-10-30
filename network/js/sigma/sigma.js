@@ -651,7 +651,7 @@ sigma.classes.EventDispatcher = function () {
             b.shadowOffsetY = 0;
             b.shadowBlur = 0;
             b.fillStyle = "node" == j.p.labelHoverColor ? a.color || j.p.defaultNodeColor : j.p.defaultLabelHoverColor;
-            b.fillText(a.label, h + 4, g + m - 3);
+            b.fillText(":("+a.label, h + 4, g + m - 3);
             return j
         }
         function m(a) {
