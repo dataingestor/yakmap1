@@ -564,7 +564,7 @@ function nodeActive(a) {
             var d = f.attributes[attr],
                 h = "";
 			if (attr!=image_attribute) {
-                h = '<span><strong>' + attr + ':</strong> ' + d + '_^^_+'</span><br/>'
+                h = '<span><strong>' + attr + ':</strong> ' + d + '_^^_'+'</span><br/>'
 			}
             //temp_array.push(f.attributes[g].attr);
             e.push(h)
