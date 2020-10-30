@@ -508,7 +508,7 @@ function nodeActive(a) {
 				d = c.group;
 				f.push('<li class="cf" rel="' + c.color + '"><div class=""></div><div class="">' + d + "</div></li>");
 			}*/
-			f.push('<li class="membership"><a href="#' + c.name + '" onmouseover="sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex[\'' + c.id + '\'])\" onclick=\"nodeActive(\'' + c.id + '\')" onmouseout="sigInst.refresh()">' + c.name + '_^_'+ "</a></li>");
+			f.push('<li class="membership"><a href="#' + c.name + '" onmouseover="sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex[\'' + c.id + '\'])\" onclick=\"nodeActive(\'' + c.id + '\')" onmouseout="sigInst.refresh()">' + c.name +  "</a></li>");
 		}
 		return f;
 	}
@@ -560,11 +560,11 @@ function nodeActive(a) {
         e = [];
         temp_array = [];
         g = 0;
-        for (var attr in f.attributes) {
+        for (var attr in f.attributes) {//here we display attributes (maier)
             var d = f.attributes[attr],
                 h = "";
 			if (attr!=image_attribute) {
-                h = '<span><strong>' + attr + ':</strong> ' + d + '_^^_'+'</span><br/>'
+                h = '<span><strong>' + attr + ':</strong> ' + d +'</span><br/>'
 			}
             //temp_array.push(f.attributes[g].attr);
             e.push(h)
@@ -574,7 +574,7 @@ function nodeActive(a) {
         	//image_index = jQuery.inArray(image_attribute, temp_array);
         	$GP.info_name.html("<div><img src=" + f.attributes[image_attribute] + " style=\"vertical-align:middle\" /> <span onmouseover=\"sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex['" + b.id + '\'])" onmouseout="sigInst.refresh()">' + b.label + "</span></div>");
         } else {
-        	$GP.info_name.html("<div><span onmouseover=\"sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex['" + b.id + '\'])" onmouseout="sigInst.refresh()">' + b.label + "</span></div>");
+        	$GP.info_name.html("<div><span onmouseover=\"sigInst._core.plotter.drawHoverNode(sigInst._core.graph.nodesIndex['" + b.id + '\'])" onmouseout="sigInst.refresh()">' + b.label +"_^_" + "</span></div>");
         }
         // Image field for attribute pane
         $GP.info_data.html(e.join("<br/>"))
