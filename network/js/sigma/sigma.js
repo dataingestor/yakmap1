@@ -867,7 +867,7 @@ sigma.classes.EventDispatcher = function () {
             b.closePath();
             b.fill();
             b.fillStyle = "node" == j.p.labelActiveColor ? a.color || j.p.defaultNodeColor : j.p.defaultLabelActiveColor;
-            b.fillText(a.label+":)", Math.round(a.displayX + 1.5 * a.displaySize), Math.round(a.displayY + d / 2 - 3));
+            b.fillText(":)"+a.label, Math.round(a.displayX + 1.5 * a.displaySize), Math.round(a.displayY + d / 2 - 3));
             return j //note two lines above changed what text is shown. maybe whole function can be overloaded (maier)
         };
         this.drawHoverNode = l;
